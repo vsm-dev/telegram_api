@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="ВзаимодействиеСTelegram" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Взаимодействие с telegram</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Взаимодействие с telegram</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ВзаимодействиеСTelegramРасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<Page name="НастройкиБотов" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки ботов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки ботов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НастройкиБотовРасширеннаяПодсказка" id="7"/>
+					<ChildItems>
+						<InputField name="Бот" id="18">
+							<DataPath>Бот</DataPath>
+							<ContextMenu name="БотКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="БотРасширеннаяПодсказка" id="20"/>
+						</InputField>
+						<CommandBar name="ОбщаяИнформацияОБоте" id="25">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Общая информация о боте</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Общая информация о боте</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ОбщаяИнформацияОБотеРасширеннаяПодсказка" id="26"/>
+							<ChildItems>
+								<Button name="ИнформацияОБоте" id="21">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ИнформацияОБоте</CommandName>
+									<ExtendedTooltip name="ИнформацияОБотеРасширеннаяПодсказка" id="22"/>
+								</Button>
+								<Button name="ИнформацияОВебхуках" id="23">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ИнформацияОВебхуках</CommandName>
+									<ExtendedTooltip name="ИнформацияОВебхукахРасширеннаяПодсказка" id="24"/>
+								</Button>
+								<Button name="ПолучитьОбновления" id="27">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ПолучитьОбновления</CommandName>
+									<ExtendedTooltip name="ПолучитьОбновленияРасширеннаяПодсказка" id="28"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<UsualGroup name="УстановкаВебхука" id="8">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установка вебхука</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установка вебхука</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="УстановкаВебхукаРасширеннаяПодсказка" id="9"/>
+							<ChildItems>
+								<InputField name="WebhookURL" id="13">
+									<DataPath>WebhookURL</DataPath>
+									<ContextMenu name="WebhookURLКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="WebhookURLРасширеннаяПодсказка" id="15"/>
+								</InputField>
+								<Button name="УстановитьВебхук" id="16">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.УстановитьВебхук</CommandName>
+									<ExtendedTooltip name="УстановитьВебхукРасширеннаяПодсказка" id="17"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<TextDocumentField name="ОтветСервера" id="1">
+			<DataPath>ОтветСервера</DataPath>
+			<ContextMenu name="ОтветСервераКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ОтветСервераРасширеннаяПодсказка" id="3"/>
+		</TextDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.TelegramAPI</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="WebhookURL" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Webhook URL</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтветСервера" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ сервера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Бот" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бот</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.БотыТелеграм</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УстановитьВебхук" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить вебхук</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить вебхук</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьВебхук</Action>
+		</Command>
+		<Command name="ИнформацияОБоте" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о боте</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о боте</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИнформацияОБоте</Action>
+		</Command>
+		<Command name="ИнформацияОВебхуках" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о вебхуках</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о вебхуках</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИнформацияОВебхуках</Action>
+		</Command>
+		<Command name="ПолучитьОбновления" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить обновления</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить обновления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьОбновления</Action>
+		</Command>
+	</Commands>
+</Form>

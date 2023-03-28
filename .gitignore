@@ -1,0 +1,8 @@
+build/
+
+.env
+ConfigDumpInfo.xml
+build
+out
+.vscode
+.scannerwork
