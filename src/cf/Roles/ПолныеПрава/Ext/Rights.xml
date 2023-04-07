@@ -14,10 +14,6 @@
 			<value>false</value>
 		</right>
 		<right>
-			<name>CollaborationSystemInfoBaseRegistration</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>MainWindowModeNormal</name>
 			<value>true</value>
 		</right>

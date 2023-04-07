@@ -212,20 +212,27 @@
 			<ModalityUseMode>DontUse</ModalityUseMode>
 			<SynchronousPlatformExtensionAndAddInCallUseMode>DontUse</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
-			<CompatibilityMode>Version8_3_16</CompatibilityMode>
+			<CompatibilityMode>Version8_3_20</CompatibilityMode>
 			<DefaultConstantsForm/>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>HTTPСервисы</Subsystem>
+			<Subsystem>Боты</Subsystem>
 			<Role>ПолныеПрава</Role>
 			<Role>ИспользованиеTelegram</Role>
+			<CommonModule>БотыСистемыВзаимодействияВызовСервера</CommonModule>
+			<CommonModule>БотыСистемыВзаимодействияКлиент</CommonModule>
 			<CommonModule>КоннекторHTTP</CommonModule>
 			<CommonModule>ОбщегоНазначения</CommonModule>
 			<CommonModule>ОбщегоНазначенияHTTP</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
 			<CommonModule>Телеграм</CommonModule>
 			<HTTPService>Telegram</HTTPService>
+			<ScheduledJob>ВыполнитьОбработкуБотов</ScheduledJob>
+			<Bot>ТестовыйБот</Bot>
+			<CommonCommand>ВыполнитьОбработкуБотов</CommonCommand>
+			<CommonCommand>ИнициализироватьБотов</CommonCommand>
 			<Catalog>БотыТелеграм</Catalog>
 			<Catalog>УчетныеЗаписиТелеграм</Catalog>
 			<Document>ВходящийHTTPЗапрос</Document>
